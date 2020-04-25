@@ -8,7 +8,7 @@ public class Weather {
     private Location location;
 
 
-
+    public Weather(){}
     public Weather(Double temperature, String city, Request request, Location location) {
         this.temperature = temperature;
         this.city = city;

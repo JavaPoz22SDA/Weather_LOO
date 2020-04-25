@@ -6,7 +6,7 @@ public class Request {
     private String query;
 
 
-
+    public Request() {}
     public Request(String type, String query) {
         this.type = type;
         this.query = query;

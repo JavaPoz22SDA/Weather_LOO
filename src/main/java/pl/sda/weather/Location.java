@@ -5,7 +5,7 @@ public class Location {
     private String country;
 
 
-
+    public Location() {}
     public Location(String name, String country) {
         this.name = name;
         this.country = country;
