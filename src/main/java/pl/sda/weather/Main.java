@@ -12,16 +12,17 @@ public class Main {
         ObjectMapper mapper = new ObjectMapper();
 
         Location location = new Location("Poznan", "Poland");
-        Request request = new Request("City", "Poznan,Poland");
+        Request request = new Request("City", "Poznan, Poland");
 
-        Weather weather = new Weather(23.23, "Poznan",request,location);
+        Weather weather = new Weather(23.23, "Poznan", request, location);
         System.out.println(weather.getTemperature());
         weather.setTemperature(34.33);
         System.out.println(weather.getTemperature());
 
         mapper.writeValue(new File("data.json"), weather);
 
-        Weather readWeather =  mapper.readValue(new File("data.json"),
+
+        Weather readWeather = mapper.readValue(new File("data.json"),
                 Weather.class);
         System.out.println(readWeather.getCity());
 

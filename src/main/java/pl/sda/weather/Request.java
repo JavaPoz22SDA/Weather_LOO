@@ -4,7 +4,24 @@ public class Request {
 
     private String type;
     private String query;
+    private String language;
+    private String unit;
 
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
 
     public Request() {}
     public Request(String type, String query) {
