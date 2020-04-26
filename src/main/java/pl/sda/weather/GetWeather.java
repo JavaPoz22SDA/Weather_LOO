@@ -1,10 +1,7 @@
 package pl.sda.weather;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Scanner;
 
 public class GetWeather {
